@@ -1,0 +1,98 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    	font-family: Helvetica;
+    	line-height: 1.6;
+    	background-color: #faf3dd;
+	text-align: left;
+}
+
+html * {
+  	font-family: Helvetica, sans-serif;
+}
+
+/* Header Styling */
+	header {
+    		background-color: #5e6472;
+    		color: white;
+    		padding-top: 38px;
+    		text-align: center;
+}
+
+.titel {
+	grid-area: semester;
+	justify-self: start;
+	height: 50px;
+ 	width: 150px;
+	border-radius: 25px;
+  	padding: 20px; 
+	color: white;
+	background: #ffa69e;
+	align self:center;
+
+	/* Flexbox properties to center text */
+	display: flex;
+    	justify-content: center; /* Horizontally center */
+    	align-items: center; /* Vertically center */
+
+}
+
+.item {
+ 	height: 200px;
+ 	width: 100%;
+	border-radius: 25px;
+  	padding: 20px; 
+	color: white;
+	background: linear-gradient(180deg, #5e6472 40%,#aed9e0 40%);
+	transition: border 0.2s ease;
+}
+
+.item:hover {
+    border: 3px solid #ffa69e; /* Adds a border on hover */
+}
+
+.topnav {
+  	background-color: #333;
+	margin-top:50px;
+ 	overflow: hidden;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.container {
+	justify-items: start;
+	padding:30px;
+  	display: grid; 
+  	grid-template-columns: 1fr 1fr; 
+  	grid-template-rows: auto 1fr 1fr; 
+  	gap: 30px 30px; 
+  	grid-template-areas: 
+   	"titel titel"
+    	". . "; 
+}
+
+
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    text-align: left;
+}

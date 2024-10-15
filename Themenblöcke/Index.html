@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encyclopaedia Medica - Themenblöcke</title>
+	<link rel="icon" type="image/x-icon" href="../media/android-brain_icon-icons.com_66654.ico">
+    <link rel="stylesheet" href="css/themenbloecke.css">
+	<script src="js/themenbloecke.js" defer></script>
+</head>
+
+<body>
+<div id="mySidenav" class="sidenav">
+</div>
+
+   	<header class="header">
+
+		<div class="page-titel">
+			<h1 id="titletitle">Themenblöcke</h1>
+			<img id="title-img" src="media/vorlesung.png">
+		</div>
+		<nav class="navbar">
+			<ul>
+				<li><a href="../index.html">Home</a></li>
+			</ul>
+		</nav>
+
+    </header>
+
+    <main>
+
+<!-- Themenblöcke Container -->
+  		<div class="container_1">
+
+			<div class="semester">
+				5.Semester
+			</div>
+
+
+
+			<!-- Themenblock Grundlagen -->
+			<div class="themenbloecke" id="grundlagen" onclick="loadLectureList('lecturelist.html')" style="cursor: pointer;">	
+				<div class="title-block"> 
+					<div class="title_themenblöcke">Grundlagen der Diagnostik und Therapie </div>
+				</div>
+				<div class="bottom-block">
+					<img src="media/diagnostics.jpg">
+				</div>
+			</div>
+
+			<img class="modal-img" id="mindmap_grundlagen" src="media/Mindmap_TB_Grundlagen_der_Diagnostik_und_Therapie_2021.png" alt="Mindmap TB Grundlagen der Diagnostik und Therapie" height="200px" onclick="openModal(this)">
+
+				<div id="myModal" class="modal">
+					<span class="close" onclick="closeModal()">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+ 				 </div>
+
+
+
+			<!-- Themenblock Atmung -->
+			<div class="themenbloecke" id="atmung" onclick="location.href='#Atmung';" style="cursor: pointer;">
+				<div class="title-block">
+					<div class="title_themenblöcke">Atmung</div>
+				</div>
+				<div class="bottom-block">
+					<img src="media/atmung.jpg">
+				</div>	
+			</div>
+
+			<img class="modal-img" id="mindmap_atmung" src="media/Mindmap_TB_Atmung_2020.png" alt="Mindmap TB Atmung" height="200px" onclick="openModal(this)">
+
+				<div id="myModal" class="modal">
+					<span class="close" onclick="closeModal()">&times;</span>
+					<img class="modal-content" id="img01">
+					<div id="caption"></div>
+ 				 </div>
+
+
+			<!-- Themenblock Herz-Kreislauf -->
+			<div class="themenbloecke" id="herz" onclick="location.href='#Kreislauf';" style="cursor: pointer;">
+				<div class="title-block">
+					<div class="title_themenblöcke">Herz-Kreislauf</div>
+				</div>
+				<div class="bottom-block">
+					<img src="media/herz.jpg">
+				</div>	
+			</div>
+
+			<img class="modal-img" id="mindmap_herz" src="media/Mindmap_TB_Herz-Kreislauf_2021.png" alt="Mindmap TB Herz-Kreislauf" height="200px" onclick="openModal(this)">
+
+			<div id="myModal" class="modal">
+				<span class="close" onclick="closeModal()">&times;</span>
+				<img class="modal-content" id="img01">
+				<div id="caption"></div>
+			  </div>
+
+		</div>
+
+
+	
+
+		<div class="container_2">
+
+			<div class="semester">
+				6.Semester
+			</div>
+
+			<div class="themenbloecke" id="block_4" onclick="location.href='#Block4';" style="cursor: pointer;">	
+				Block 4
+			</div>
+
+			<div class="themenbloecke" id="block_5" onclick="location.href='#Block5';" style="cursor: pointer;">	
+				Block 5
+			</div>
+
+			<div class="themenbloecke" id="block_6" onclick="location.href='#Block6';" style="cursor: pointer;">	
+				Block 6
+			</div>
+
+			<div class="themenbloecke" id="block_7" onclick="location.href='#Block7';" style="cursor: pointer;">	
+				Block 7
+			</div>
+		</div>
+
+		</div>
+				
+   	</main>
+	
+</body>
+</html>

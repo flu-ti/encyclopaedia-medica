@@ -1,0 +1,144 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    	font-family: Helvetica;
+    	line-height: 1.6;
+    	background-color: var(--darkblue);;
+	text-align: left;
+	color:white;
+}
+
+html * {
+  	font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --purple: #734B5E;
+  --white: #ffffff;
+  --darkblue: #13192A;
+  --grey: #474848;
+  --grey_hover: #CBCDCD;
+}
+
+/* Header Styling */
+	header {
+    		color: white;
+    		padding-top: 0px;
+    		text-align: center;
+}
+
+.sidenav {
+	position: fixed; /* Keeps the sidebar fixed in place */
+  display: none;
+  height: 100%;
+  width: 630px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: rgba(19,25,42, 0.45); /* Semi-transparent black */
+  overflow-x: hidden;
+  padding-top: 20px;
+	padding-bottom: 100px;
+	overflow-y: auto;
+
+}
+
+.sidenav {
+  left:0;
+  backdrop-filter: blur(40px); /* Blur effect */
+  -webkit-backdrop-filter: blur(40px); /* For Safari support */
+}
+
+.sidenav a {
+	padding-left: 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  display: block;
+}
+
+.lecture-content {
+  background-color: white;
+	color:black;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+h3 {
+	margin-top:20px;
+	margin-left:0px;
+	margin-right: 20px;
+	color:#e07b8f;
+}
+
+.Woche{
+	margin-left: 20px;
+	margin-right:20px;
+	margin-top:45px;
+}
+
+.title-vorlesungen {
+	padding-left: 20px;
+	color: #e07b8f;
+}
+
+#link {
+	color:white;
+	margin-left:30px;
+}
+
+#link:hover {
+	color:#75C3FA;
+}
+
+.topnav.open{
+right:0;
+}
+
+.topnav {
+background-color: var(--grey);
+margin-top:0px;
+overflow: hidden;
+}
+
+.topnav .header-item:hover {
+background-color: var(--grey);
+color: #f2f2f2;
+}
+
+.topnav .header-item{
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+background-color: var(--grey_hover);
+color: black;
+font-size: 17px;
+}
+
+.topnav #breadcrumb{
+  float:left;
+}
+
+.topnav #list{
+  float:right;
+  cursor:pointer;
+}
+
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    text-align: left;
+}

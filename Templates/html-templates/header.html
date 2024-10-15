@@ -1,0 +1,79 @@
+<div class="topnav">
+    <div class="open" onclick="toggleNav()">Vorlesungsliste</div>
+    <a href="../../../index.html">Themenblöcke</a>
+      <a href="../../../../index.html">Home</a>
+
+    
+</div> 
+
+<style>
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    	font-family: Helvetica;
+    	line-height: 1.6;
+    	background-color: var(--darkblue);;
+	text-align: left;
+	color:white;
+}
+
+html * {
+  	font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --purple: #734B5E;
+  --white: #ffffff;
+  --darkblue: #13192A;
+  --grey: #474848;
+  --grey_hover: #CBCDCD;
+}
+
+/* Header Styling */
+	header {
+    		color: white;
+    		padding-top: 0px;
+    		text-align: center;
+}
+
+.topnav {
+  	background-color: var(--grey);
+	margin-top:0px;
+ 	overflow: hidden;
+}
+
+.topnav a:hover {
+  background-color: var(--grey_hover);
+  color: black;
+}
+
+.topnav a{
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav div:hover {
+  background-color: var(--grey_hover);
+  color: black;
+}
+
+.topnav div{
+  cursor: pointer;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+</style>

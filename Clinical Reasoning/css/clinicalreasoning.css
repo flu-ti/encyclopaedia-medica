@@ -1,0 +1,423 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    	font-family: Helvetica;
+    	line-height: 1.6;
+    	background-color: var(--darkblue);
+	text-align: left;
+}
+
+html * {
+  	font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --purple: #734B5E;
+  --white: #ffffff;
+  --darkblue: #13192A;
+  --grey: #474848;
+  --grey_hover: #CBCDCD;
+  --lightblue: #8E9FCC;
+  --titlesalmon: #e07b8f;
+}
+
+/* Header Styling */
+.header {
+    display: flex; /* Use flexbox for the header */
+    flex-direction: column; /* Stack title and nav vertically */
+    height: 180px; /* Set height of the header (can adjust as needed) */
+    background-color: var(--purple); /* Background color of header */
+    position: relative; /* Position for absolute nav */
+}
+
+.page-titel {	
+	display: flex;
+  	justify-content: left;
+  	align-items: left;
+	height:200px;
+	padding-left:30px;
+	padding-bottom:10px;
+	font-size:25px;
+	color:white;
+}
+
+#titletitle {
+	align-self:flex-end;
+}
+
+#title-img {
+	-webkit-mask-image:-webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+	mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+	position:absolute;
+	right:0;
+	top:0;
+	height:180px;
+  }
+
+.title-block {
+	background-color: var(--purple); /* Change the background color to what you like */
+    	color: white;
+    	padding: 0px;
+	display:flex;
+    	align-items: center;
+    	justify-content: center;
+   	text-align: center;
+	height:30%;	
+}
+
+.title_2 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.item {
+ 	height: 200px;
+ 	width: 100%;
+  	padding: 0px; 
+	color: white;
+	transition: border 0.2s ease;
+}
+
+.bottom-block {
+    background-color: #FFFFFF;
+	height:70%;
+}
+
+.bottom-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image is cropped to fit the container without distortion */
+    object-position: center; /* You can adjust this to show the part of the image you want, e.g. top, bottom, etc. */
+    transition: filter 0.6s ease; /* Smooth transition for hover effect */
+	filter: opacity(1);
+}
+
+.item:hover .bottom-block img{
+    filter: opacity(0.6); /* Restore the normal brightness */
+}
+
+.navbar ul{
+	list-style-type:none;
+	background-color:var(--grey);
+	padding: 0px;
+	margin:0px;
+	overflow: hidden;
+}
+
+.navbar a{
+	color: black;
+	text-decoration: none;
+	background-color: var(--grey_hover);
+	padding:14px 16px;
+	display:block;
+	text-align: center;
+}
+
+.navbar a:hover{
+	background-color: var(--grey);
+	color: var(--white);
+}
+
+.navbar li {
+	float: left;
+}
+
+.container {
+	justify-items: start;
+	padding:30px;
+  	display: grid; 
+  	grid-template-columns: 1fr 1fr; 
+  	grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+  	gap: 30px 30px; 
+  	grid-template-areas: 
+    ". ."
+	". ."
+	". ."
+	". ."
+	". ."; 
+}
+
+.container-diseases {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+	gap: 20px; /* space between the cards */
+	padding:0;
+}
+
+.container-textbook {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+	gap:20px;
+	padding-top:40px;
+}
+
+.textbook-thumbnail {
+	cursor: pointer;
+	transition: 0.3s;
+	width: 100%;
+    height: 100%;
+}
+
+.disease {
+	background-color: #f9f9f9;
+	text-align: center;
+	color: white;
+	transition: border 0.2s ease;
+  }
+
+.disease:hover .bottom-block img{
+    filter: opacity(0.6); /* Restore the normal brightness */
+}
+
+.category {
+	justify-self: start;
+	height: 100px;
+ 	width: 50%;
+  	padding: 0px; 
+	color: white;
+	align-self:center;
+
+	/* Flexbox properties to center text */
+	display: flex;
+    justify-content: flex-start; /* Horizontally center */
+    align-items: center; /* Vertically center */
+	padding-left:30px;
+	font-size:50px;
+	font-weight: bold;
+}
+
+.category-container {
+	padding-bottom:30px;
+	margin:30px;
+	margin-top: 0px;
+}
+
+#allgemeine-pathologie {
+	color: #864ab4;
+}
+
+#respirationstrakt {
+	color: pink;
+}
+
+#gefässe {
+	color: red;
+}
+
+#herz {
+	color: orange;
+}
+
+
+/* The Modal (background) */
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  /* Modal Content (image) */
+  .modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+  }
+  
+  /* Caption of Modal Image */
+  #caption {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+	text-align: center;
+	color: #ccc;
+	padding: 10px 0;
+	height: 150px;
+  }
+
+  /* Add Animation */
+.modal-content, #caption {  
+	animation-name: zoom;
+	animation-duration: 0.6s;
+  }
+
+ .modal-img {
+	cursor: pointer;
+	transition: 0.3s;
+	width: 50%;
+    height: 200px;
+    object-fit: cover; /* Ensures the image is cropped to fit the container without distortion */
+    object-position: center; /* You can adjust this to show the part of the image you want, e.g. top, bottom, etc. */
+  }
+
+  @keyframes zoom {
+	from {transform: scale(0.1)} 
+	to {transform: scale(1)}
+  }
+  
+  /* The Close Button */
+  .close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: #f1f1f1;
+	font-size: 40px;
+	font-weight: bold;
+	transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: #bbb;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+
+
+/* SSP-Page */
+.SSP-container {
+	display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+    width: auto;
+    overflow: auto;
+    flex-direction: row;
+	margin:30px;
+	gap:30px;
+}
+
+.SSP-list{
+	width: 40%;
+	max-width: 800px;
+    height: auto;
+    padding-left:30px;
+	padding-top:30px;
+    background-color: var(--grey_hover);
+}
+
+.SSP-list ol {
+	list-style-type: none; /* Remove default numbering */
+	padding-left: 20px; /* Indent the first level */
+	counter-reset: item; /* Reset counter for each new list */
+  }
+
+  .SSP-list #nullentry {
+	padding-left:20px;
+	font-weight:bold;
+  }
+  
+  .SSP-list ol > li {
+	counter-increment: item; /* Increment counter for each list item */
+  }
+  
+  .SSP-list ol > li::before {
+	content: counter(item) ". "; /* Display the first level number (e.g., 1., 2., etc.) */
+  }
+  
+  .SSP-list ol ol {
+	list-style-type: none; /* Remove default numbering for sub-lists */
+	padding-left: 25px; /* Indent sub-lists */
+	counter-reset: subitem; /* Reset counter for sub-lists */
+	padding-bottom:10px;
+  }
+  
+  .SSP-list ol ol > li {
+	counter-increment: subitem; /* Increment sub-counter for nested list items */
+  }
+  
+  .SSP-list ol ol > li::before {
+	content: counter(item) "." counter(subitem) ". "; /* Display the nested numbering (e.g., 1.1, 1.2, etc.) */
+  }
+
+  .SSP-list li {
+	padding:3px;
+  }
+
+  .link:hover {
+	color:var(--lightblue)
+  }
+
+  .SSP-list #first{
+	font-weight:bold;
+  }
+
+.SSP-start-text {
+	width:60%;
+	height: auto;
+	color:white;
+	display:block;
+}
+
+.SSP-list-specific {
+	width:60%;
+	height: auto;
+	color:white;
+	display:none;
+}
+
+.SSP-start-text ul{
+	padding-left: 50px;
+	padding-bottom:30px;
+}
+
+.SSP-start-text p{
+	margin-bottom:30px;
+}
+
+.SSP-start-text h1{
+	color: var(--titlesalmon);
+}
+
+
+.SSP-list-specific {
+	color:white;
+}
+
+.SSP-list-specific ul {
+	padding-left:90px;
+	list-style-type: none;
+}
+
+.SSP-list-specific h1{
+	color: var(--titlesalmon);
+	margin-bottom:10px;
+}
+
+.SSP-list-specific li{
+	font-size: 20px;
+	counter-increment: list-item; /* Increment the counter for each list item */
+}
+
+.SSP-list-specific li::marker {
+	content: 'SSP ' counter(list-item) "	";
+	margin-right: 20px;
+	color: var(--lightblue);
+	counter-reset: list-item 13; /* Start the counter at 16 so the first item will be 17 */
+
+
+}
+
+
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    text-align: left;
+}

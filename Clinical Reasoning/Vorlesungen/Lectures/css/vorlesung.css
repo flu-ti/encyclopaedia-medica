@@ -1,0 +1,74 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and General Styling */
+body {
+    	font-family: Helvetica;
+    	line-height: 1.6;
+    	background-color: var(--darkblue);;
+	text-align: left;
+	color:white;
+}
+
+html * {
+  	font-family: Helvetica, sans-serif;
+}
+
+:root {
+  --purple: #734B5E;
+  --white: #ffffff;
+  --darkblue: #13192A;
+  --grey: #474848;
+  --grey_hover: #CBCDCD;
+}
+
+/* Header Styling */
+	header {
+    		background-color: #5e6472;
+    		color: white;
+    		padding-top: 0px;
+    		text-align: center;
+}
+
+.topnav {
+  	background-color: var(--grey);
+	margin-top:0px;
+ 	overflow: hidden;
+}
+
+.topnav a:hover {
+  background-color: var(--grey_hover);
+  color: black;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.lecture-content {
+  background-color: white;
+	color:black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+h1 {
+  padding: 20px;
+}
+
+
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    text-align: left;
+}

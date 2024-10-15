@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/clinical_reasoning.js" defer></script>
+    <title>Diagnosis Layout</title>
+    <style>
+:root {
+  --purple: #734B5E;
+  --white: #ffffff;
+  --darkblue: #13192A;
+  --grey: #474848;
+  --grey_hover: #CBCDCD;
+}
+
+/* Body and General Styling */
+body {
+    font-family: Helvetica;
+    line-height: 1.6;
+    align-items: left;
+    background-color: var(--darkblue);
+	color:white;
+    margin: 0;
+    padding: 0;
+
+}
+
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            border: solid black;
+            display: flex;
+            flex-direction: column; /* Stack title and grid vertically */
+            align-items: flex-start; /* Aligns the title and grid to the left */
+            margin-left: 0; /* Remove any default horizontal centering */
+            padding: 20px; /* Add some padding if needed */
+        }
+
+        .diagnosis {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            margin-top: 20px;
+
+        }
+
+        .grid-item {
+            background-color: var(--grey_hover);
+            padding: 20px;
+            border: 2px solid #000;
+            height: 200px; /* Adjust height as needed */
+        }
+
+        .grid-item h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header class="header">
+    </header>
+
+
+    <main>
+    <div class="container">
+        <!-- Diagnosis Section -->
+        <div class="diagnosis">
+            DISEASE SCRIPT:
+        </div>
+
+        <!-- Grid Layout -->
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>EPIDEMIOLOGIE:</h3>
+                <!-- Add content here -->
+            </div>
+            <div class="grid-item">
+                <h3>PRÄVENTION & SCREENING:</h3>
+                <!-- Add content here -->
+            </div>
+            <div class="grid-item">
+                <h3>PATHOLOGIE:</h3>
+                <!-- Add content here -->
+            </div>
+            <div class="grid-item">
+                <h3>DIAGNOSTIK:</h3>
+                <!-- Add content here -->
+            </div>
+            <div class="grid-item">
+                <h3>KRANKHEITSBILD:</h3>
+                <!-- Add content here -->
+            </div>
+            <div class="grid-item">
+                <h3>THERAPIE:</h3>
+                <!-- Add content here -->
+            </div>
+            <div class="grid-item">
+                <h3>VERLAUF:</h3>
+                <!-- Add content here -->
+            </div>
+            <div class="grid-item">
+                <h3>FOLLOW-UP & PROGNOSE:</h3>
+                <!-- Add content here -->
+            </div>
+        </div>
+    </div>
+    </main>
+
+</body>
+</html>
