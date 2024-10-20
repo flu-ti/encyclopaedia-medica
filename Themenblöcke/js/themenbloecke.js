@@ -49,16 +49,3 @@ function closeModal() {
 }
 
 
-
-	// Detect if running on GitHub Pages or locally
-window.onload = function() {
-  var baseTag = document.createElement('base');
-  if (window.location.hostname === "flu-ti.github.io") {
-    // Set base URL for GitHub Pages
-    baseTag.href = "/encyclopaedia-medica/";
-  } else {
-    // Set base URL for local development (VS Code live preview)
-    baseTag.href = "/";
-  }
-  document.head.appendChild(baseTag);
-};
