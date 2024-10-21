@@ -31,7 +31,7 @@ html * {
 .header {
     display: flex; /* Use flexbox for the header */
     flex-direction: column; /* Stack title and nav vertically */
-    height: 180px; /* Set height of the header (can adjust as needed) */
+    height: 22vh; /* Set height of the header (can adjust as needed) */
     background-color: var(--purple); /* Background color of header */
     position: relative; /* Position for absolute nav */
 }
@@ -40,15 +40,14 @@ html * {
 	display: flex;
   	justify-content: left;
   	align-items: left;
-	height:200px;
+	height:16vh;
 	padding-left:30px;
-	padding-bottom:10px;
-	font-size:25px;
 	color:white;
 }
 
 #titletitle {
 	align-self:flex-end;
+	font-size:4vmax;
 }
 
 #title-img {
@@ -57,7 +56,7 @@ html * {
 	position:absolute;
 	right:0;
 	top:0;
-	height:180px;
+	height:22vh;
   }
 
 .title-block {
@@ -72,13 +71,14 @@ html * {
 }
 
 .title_2 {
-    font-size: 18px;
+    font-size:  1.5vmax;
     font-weight: bold;
 }
 
 .item {
  	height: 200px;
- 	width: 100%;
+ 	width: 45vw;
+	min-width: 300px;
   	padding: 0px; 
 	color: white;
 	transition: border 0.2s ease;
@@ -114,33 +114,40 @@ html * {
 	color: black;
 	text-decoration: none;
 	background-color: var(--grey_hover);
-	padding:14px 16px;
+	height:6vh;
+	min-width:6vw;
+	line-height:6vh;
 	display:block;
 	text-align: center;
+	font-size: 2vh;
+	padding-left: 1vw;
+	padding-right: 1vw;
 }
 
 .navbar a:hover{
 	background-color: var(--grey);
 	color: var(--white);
+	height:6vh;
 }
 
 .navbar li {
 	float: left;
+	height:6vh;
 }
 
 .container {
 	justify-items: start;
-	padding:30px;
+	margin-left:2vw;
+	margin-right:2vw;
+	margin-top:2vh;
   	display: grid; 
   	grid-template-columns: 1fr 1fr; 
-  	grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
   	gap: 30px 30px; 
   	grid-template-areas: 
     ". ."
-	". ."
-	". ."
-	". ."
 	". ."; 
+	overflow-x:auto;
+	overflow-y:hidden;
 }
 
 .container-diseases {
