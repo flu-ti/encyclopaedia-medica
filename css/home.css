@@ -11,6 +11,7 @@
   --darkblue: #13192A;
   --grey: #474848;
   --grey_hover: #CBCDCD;
+  --height:30vh;
 }
 
 /* Body and General Styling */
@@ -52,8 +53,9 @@ header {
 }
 
 .item {
- 	height: 220px;
- 	width: 220px;
+ 	height: var(--height);
+ 	width: var(--height);
+
 	margin:auto;
 	color: white;
 	text-align: center;
@@ -112,7 +114,7 @@ header {
   display: grid; 
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr; 
   grid-template-rows: 1fr 1fr; 
-  gap: 30px 40px; 
+  gap: 3vh 2vw; 
   grid-template-areas: 
     "Item-1 Item-2 Item-3 Item-4 Item-5"
     "Item-6 Item-7 Item-8 Item-9 Item-10"; 
