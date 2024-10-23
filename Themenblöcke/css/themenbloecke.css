@@ -26,6 +26,12 @@ html * {
   --lightblue: #8E9FCC;
 }
 
+@media only screen and (max-width: 600px) {
+	#title-img {
+		display:none;
+	}
+  }
+
 /* Header Styling */
 .header {
     display: flex; /* Use flexbox for the header */

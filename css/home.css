@@ -103,6 +103,13 @@ header {
     	filter: opacity(0.6); /* Restore the normal brightness */
 }
 
+@media only screen and (max-width: 600px) {
+	#header-img {
+		display:none;
+	}
+
+  }
+
 
 .container {
 	margin-left:2vw;
@@ -120,6 +127,35 @@ header {
     "Item-6 Item-7 Item-8 Item-9 Item-10"; 
   justify-items: center; 
   align-items: center; 
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+  .container {
+    grid-template-columns:1fr 1fr;
+    grid-template-areas: 
+    "Item-1 Item-6"
+    "Item-2 Item-7"
+    "Item-3 Item-8"
+    "Item-4 Item-9"
+    "Item-5 Item-10"
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .container {
+    grid-template-columns:1fr;
+    grid-template-areas: 
+    "Item-1"
+    "Item-2"
+    "Item-3"
+    "Item-4"
+    "Item-5"
+    "Item-6"
+    "Item-7"
+    "Item-8"
+    "Item-9"
+    "Item-10"
+  }
 }
 
 #themenblöcke { grid-area: Item-1; }
