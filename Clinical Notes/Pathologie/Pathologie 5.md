@@ -6,7 +6,14 @@
 
 ## Präparat 2: Niere bei DIC (A III 34)
 
+**Schockniere**
 
+
+
+- Glomeruli noch normal aber Tubuli sind abgelöst
+  - Tubuläre Strukturen sind erkennbar, aber die Tubuli selber sind verändert
+  - Lumina erweitert, teilweise sogar zystisch
+  - Zellen sind kleiner 
 
 ## Präparat 3: Subakuter Myokardinfarkt (S III 5)
 
