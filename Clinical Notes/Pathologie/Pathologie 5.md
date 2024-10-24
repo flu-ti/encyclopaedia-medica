@@ -8,8 +8,6 @@
 
 **Schockniere**
 
-
-
 - Glomeruli noch normal aber Tubuli sind abgelöst
   - Tubuläre Strukturen sind erkennbar, aber die Tubuli selber sind verändert
   - Lumina erweitert, teilweise sogar zystisch
@@ -17,6 +15,10 @@
 
 ## Präparat 3: Subakuter Myokardinfarkt (S III 5)
 
-
+- Perakut würde man nichts sehen
+- Länger her --> Ischämische Gebiete
+- Subakut, weil wenige Granulozyten und schon Reparaturzeichen
 
 ## Präparat 4: Chronische Lungenstauuung (A III 31 & A II 9)
+
+- 
