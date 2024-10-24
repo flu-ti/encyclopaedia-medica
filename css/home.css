@@ -41,6 +41,7 @@ header {
 
 #titeltitel{
   align-self:flex-end;
+  z-index:1;
 }
 
 #header-img {
@@ -54,7 +55,7 @@ header {
 
 .item {
  	height: var(--height);
- 	width: var(--height);
+ 	width: 100%;
 
 	margin:auto;
 	color: white;
@@ -105,7 +106,13 @@ header {
 
 @media only screen and (max-width: 600px) {
 	#header-img {
-		display:none;
+		height:22vh;
+		width:100%;
+		filter: opacity(0.4);
+		mask-image:none;
+		z-index:0;
+		object-fit: cover; /* Ensures the image is cropped to fit the container without distortion */
+		object-position: center; /* You can adjust this to show the part of the image you want, e.g. top, bottom, etc. */
 	}
 }
 

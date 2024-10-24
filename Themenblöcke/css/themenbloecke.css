@@ -26,12 +26,6 @@ html * {
   --lightblue: #8E9FCC;
 }
 
-@media only screen and (max-width: 600px) {
-	#title-img {
-		display:none;
-	}
-  }
-
 /* Header Styling */
 .header {
     display: flex; /* Use flexbox for the header */
@@ -59,10 +53,23 @@ html * {
 	height:22vh;
   }
 
+  @media only screen and (max-width: 600px) {
+	#title-img {
+		height:16vh;
+		width:100%;
+		filter: opacity(0.4);
+		mask-image:none;
+		z-index:0;
+		object-fit: cover; /* Ensures the image is cropped to fit the container without distortion */
+		object-position: center; /* You can adjust this to show the part of the image you want, e.g. top, bottom, etc. */
+	}
+  }
+
 
 #titletitle {
 	align-self:flex-end;
 	font-size:4vmax;
+	z-index:1;
 }
 
 .navbar ul{

@@ -48,6 +48,7 @@ html * {
 #titletitle {
 	align-self:flex-end;
 	font-size:4vmax;
+	z-index:1;
 }
 
 #title-img {
@@ -57,6 +58,18 @@ html * {
 	right:0;
 	top:0;
 	height:22vh;
+  }
+
+  @media only screen and (max-width: 600px) {
+	#title-img {
+		height:16vh;
+		width:100%;
+		filter: opacity(0.4);
+		mask-image:none;
+		z-index:0;
+		object-fit: cover; /* Ensures the image is cropped to fit the container without distortion */
+		object-position: center; /* You can adjust this to show the part of the image you want, e.g. top, bottom, etc. */
+	}
   }
 
 .title-block {
@@ -77,7 +90,7 @@ html * {
 
 .item {
  	height: 200px;
- 	width: 45vw;
+ 	width: 100%;
 	min-width: 300px;
   	padding: 0px; 
 	color: white;
@@ -149,6 +162,16 @@ html * {
 	overflow-x:auto;
 	overflow-y:hidden;
 }
+
+@media only screen and (max-width: 800px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+		"."
+		"."
+		"."; 
+	}
+  }
 
 .container-diseases {
 	display: grid;
