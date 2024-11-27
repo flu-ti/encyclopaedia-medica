@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<a href="javascript:void(0)" class="close" id="button" onclick="closeNav()">&times;</a>
+
+<h1 class="title-vorlesungen">Atmung</h1>
+
+	<div class="Woche" id="Woche9">
+		<h2>Woche 9</h2>
+		<h3>14.11.2024</h3>
+        <ul id="vorlesungen_atmung">
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/2024-11-14-1-atemmechanik/3_241114_08_Atmung_Ulrich_Atemmechanik.pdf" id="pathophysiologische-grundlagen">Grundlagen: Atemmechanik</a></li>
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/2024-11-14-2-lungenzirkulation-gasaustausch/3_241114_09_Atmung_Ulrich_Lungenzirkulation-und-Gasaustausch.pdf" id="pathophysiologische-grundlagen">Grundlagen: Lungenzirkulation und Gasaustausch</a></li>
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/2024-11-14-3-einteilung-lungenkrankheiten_Obstruktive-lungenkrankheiten/3_241114_10_Atmung_Ulrich_Einteilung-von-Lungenkrankheiten.pdf" id="pathophysiologische-grundlagen">Grundlagen: Einteilung von Lungenkrankheiten/ Obstruktive Lungenkrankheiten</a></li>
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/2024-11-14-4-ateminsuffizienz/3_241114_11_Atmung_Schwarz_Ateminsuffizienz.pdf" id="pathophysiologische-grundlagen">Grundlagen: Ateminsuffizienz</a></li>
+        </ul>
+
+        <h3>15.11.2024</h3>
+        <ul id="vorlesungen_atmung">
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/"></a></li>
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/"></a></li>
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/"></a></li>
+            <li><a href="/encyclopaedia-medica/Themenblöcke/Atmung/Lectures/"></a></li>
+        </ul>
+		
+
+<style>
+  /* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+  --purple: #734B5E;
+  --white: #ffffff;
+  --darkblue: #13192A;
+  --grey: #474848;
+  --grey_hover: #CBCDCD;
+  --lightblue: #8E9FCC;
+  --titlesalmon: #e07b8f;
+}
+
+#button {
+    font-size: 40px; /* Adjust the size as needed */
+    color: var(--titlesalmon);    /* Change the color if needed */
+    text-decoration: none; /* Remove underline */
+    cursor: pointer; /* Makes the cursor a pointer */
+    display: inline-block; /* Ensures the link wraps tightly around the symbol */
+    line-height: 1; /* Adjusts line height to prevent extra spacing */
+    padding-left: 0.3vw; /* Remove any padding */
+	position: absolute;
+	right:1vw;
+}
+
+ul{
+    list-style-type: none;
+}
+
+#vorlesungen_atmung li {
+    font-size:20px;
+    padding-left: 10px;
+}
+
+
+
+.sidenav {
+	position: fixed; /* Keeps the sidebar fixed in place */
+  display: none;
+  height: 100%;
+  width: 40vw;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  background-color: rgba(19, 25, 42, 0.795); /* Semi-transparent black */
+  overflow-x: hidden;
+  padding-top: 3vh;
+	padding-bottom: 10vh;
+	overflow-y: auto;
+}
+
+@media only screen and (max-width: 1000px){
+	.sidenav {
+		width: 60vw;
+	}
+}
+
+@media only screen and (max-width: 600px){
+	.sidenav {
+		width: 100vw;
+        padding-left:30px;
+	}
+}
+
+.sidenav a {
+	padding-left: 4vw;
+    text-indent: -2vw;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+
+.sidenav h3 {
+	margin-top:1vh;
+	margin-left:0px;
+	margin-right: 1vw;
+	font-size:30px;
+	color:var(--titlesalmon);
+}
+
+.sidenav h2{
+	color: #76A6BC;
+	border: solid #76A6BC;
+	padding-left: 1vw;
+	margin-bottom: 1vh;
+	font-size:30px;
+}
+
+.sidenav .Woche{
+	margin-left: 1.5vw;
+	margin-right:1vw;
+	margin-top:1.5vh;
+	font-size:30px;
+}
+
+.sidenav .title-vorlesungen {
+	padding-left: 1.5vw;
+	padding-top: 1vh;
+	color: #e07b8f;
+	font-size:40px;
+}
+
+#pathologie {
+	color: rgb(255, 208, 0);
+}
+#pathologie:hover {
+	color:white;
+}
+
+#pathophysiologische-grundlagen {
+	color: rgb(0, 149, 255);
+}
+#pathophysiologische-grundlagen:hover {
+	color:white;
+}
+
+#bild_verfahren {
+	color: darkgray;
+}
+#bild_verfahren:hover {
+	color:white;
+}
+
+#hämatologie {
+	color: yellowgreen;
+}
+#hämatologie:hover {
+	color:white;
+}
+
+#onkologie {
+	color: red;
+}
+#onkologie:hover {
+	color:white;
+}
+
+#grundversorgung {
+	color: teal;
+}
+#grundversorgung:hover {
+	color:white;
+}
+
+#geriatrie {
+	color: darkgreen;
+}
+#geriatrie:hover {
+	color:white;
+}
+
+#klin_chemie {
+	color: rgb(0, 52, 184);
+}
+#klin_chemie:hover {
+	color:white;
+}
+
+#immunologie {
+	color: greenyellow;
+}
+#immunologie:hover {
+	color:white;
+}
+
+#mikrobiologie {
+	color: rgb(140, 255, 207);
+}
+#mikrobiologie:hover {
+	color:white;
+}
+
+#virologie {
+	color: rgb(72, 169, 230);
+}
+#virologie:hover {
+	color:white;
+}
+
+#parasitologie {
+	color: rgb(255, 34, 0);
+}
+#parasitologie:hover {
+	color:white;
+}
+
+#pharmakologie {
+	color: rgb(142, 97, 195);
+}
+#pharmakologie:hover {
+	color:white;
+}
+
+.link {
+	margin-left:1vw;
+}
+
+
+
+/* Main Content Styling */
+main {
+    padding: 0px;
+    text-align: left;
+}
+
+</style>
